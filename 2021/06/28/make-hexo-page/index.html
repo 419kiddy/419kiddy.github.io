@@ -4,22 +4,26 @@
   <meta charset="utf-8">
   
   
-  <title>HexoとGithub Pagesで高速ホームページ作成 | kiddyのページ</title>
+  <title>HexoとGithub Pagesで高速ウェブサイト作成 | kiddyのページ</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="こんにちは。 今回はこのウェブサイトを作る時に用いたツールについて書きたいと思います。  このサイトを見ると、「綺麗」「シンプル」「よくあるブログ」といった印象を持つかと思います。  実はこのサイトを作るにあたって、全く難しいことはしていません。   静的サイトジェネレータ Github pages  を使うことで、htmlやコード、データベース等に直接触れずにブログを開設することができ">
+  <meta name="description" content="こんにちは。 今回はこのウェブサイトを作る時に用いたツールについて書きたいと思います。 (環境:　Windows 10 64bit)  このサイトを見ると、「綺麗」「シンプル」「よくあるブログ」といった印象を持つかと思います。  実はこのサイトを作るにあたって、全く難しいことはしていません。   静的サイトジェネレータ(今回はHexo) Github pages  を使うことで、html">
 <meta property="og:type" content="article">
-<meta property="og:title" content="HexoとGithub Pagesで高速ホームページ作成">
+<meta property="og:title" content="HexoとGithub Pagesで高速ウェブサイト作成">
 <meta property="og:url" content="http://419kiddy.github.io/2021/06/28/make-hexo-page/index.html">
 <meta property="og:site_name" content="kiddyのページ">
-<meta property="og:description" content="こんにちは。 今回はこのウェブサイトを作る時に用いたツールについて書きたいと思います。  このサイトを見ると、「綺麗」「シンプル」「よくあるブログ」といった印象を持つかと思います。  実はこのサイトを作るにあたって、全く難しいことはしていません。   静的サイトジェネレータ Github pages  を使うことで、htmlやコード、データベース等に直接触れずにブログを開設することができ">
+<meta property="og:description" content="こんにちは。 今回はこのウェブサイトを作る時に用いたツールについて書きたいと思います。 (環境:　Windows 10 64bit)  このサイトを見ると、「綺麗」「シンプル」「よくあるブログ」といった印象を持つかと思います。  実はこのサイトを作るにあたって、全く難しいことはしていません。   静的サイトジェネレータ(今回はHexo) Github pages  を使うことで、html">
 <meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="http://419kiddy.github.io/images/node_install1.PNG">
+<meta property="og:image" content="http://419kiddy.github.io/images/node_install2.PNG">
+<meta property="og:image" content="http://419kiddy.github.io/images/node_install3.PNG">
 <meta property="article:published_time" content="2021-06-28T09:43:10.000Z">
-<meta property="article:modified_time" content="2021-06-28T10:05:09.786Z">
+<meta property="article:modified_time" content="2021-06-28T11:56:19.719Z">
 <meta property="article:author" content="kiddy">
 <meta property="article:tag" content="技術">
 <meta property="article:tag" content="Hexo">
 <meta property="article:tag" content="WEB">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://419kiddy.github.io/images/node_install1.PNG">
   
     <link rel="alternate" href="/atom.xml" title="kiddyのページ" type="application/atom+xml">
   
@@ -94,7 +98,7 @@
         
   
     <h1 class="p-name article-title" itemprop="headline name">
-      HexoとGithub Pagesで高速ホームページ作成
+      HexoとGithub Pagesで高速ウェブサイト作成
     </h1>
   
 
@@ -109,27 +113,57 @@
 <br>
 こんにちは。
 今回はこのウェブサイトを作る時に用いたツールについて書きたいと思います。
+(環境:　Windows 10 64bit)
 <br>
 このサイトを見ると、「綺麗」「シンプル」「よくあるブログ」といった印象を持つかと思います。
 <br>
 実はこのサイトを作るにあたって、全く難しいことはしていません。
 
 <ul>
-<li>静的サイトジェネレータ</li>
+<li>静的サイトジェネレータ(今回はHexo)</li>
 <li>Github pages</li>
 </ul>
-<p>を使うことで、htmlやコード、データベース等に直接触れずにブログを開設することができました。<br><br></p>
-<ol>
-<li>実行環境の準備</li>
-<li>Hexoでプロジェクト作成</li>
-<li>Github pagesとの連携・公開</li>
-<li>記事の作成</li>
-</ol>
+<p>を使うことで、htmlやコード、データベース等に直接触れずにブログを開設することができました。以下、私の経験をもとに実際の手順をまとめていきます。<br><br></p>
+<h1><span id="shou-shun">手順</span><a href="#shou-shun" class="header-anchor">#</a></h1><div class="toc">
 
+<!-- toc -->
+
+<ul>
+<li><a href="#shi-xing-huan-jing-nozhun-bei">実行環境の準備</a></li>
+<li><a href="#hexodepuroziekutozuo-cheng">Hexoでプロジェクト作成</a></li>
+<li><a href="#github-pagestonolian-xi-gong-kai">Github pagesとの連携・公開</a></li>
+<li><a href="#ji-shi-nozuo-cheng">記事の作成</a></li>
+</ul>
+<!-- tocstop -->
+
+</div>
+<span id="more"></span>
+<br>
+
+<h1><span id="shi-xing-huan-jing-nozhun-bei">実行環境の準備</span><a href="#shi-xing-huan-jing-nozhun-bei" class="header-anchor">#</a></h1><p>HexoはNode.js上で動作する静的サイトジェネレータなので、まずはNode.jsの実行環境を用意しましょう。<br><a target="_blank" rel="noopener" href="https://nodejs.org/ja/download/">Node.jsの公式サイト</a>にアクセスし、自分のOSに合ったインストーラをダウンロードします。<br>インストーラを起動すると</p>
+<img src="/images/node_install1.PNG" width="50%">
+
+<p>こんな感じのセットアップウィザードが始まるのでポチポチ進めていきましょう。<br>無事インストールが済んだら環境変数を確認しましょう。<br>筆者の環境(Windows 10)での方法になりますが、環境変数は<br><br><br>スタートメニュー→設定<br><img src="/images/node_install2.PNG" width="40%"></p>
+<p>検索窓に”環境変数”と打ってポチリ<br><img src="/images/node_install3.PNG" width="80%"></p>
+<p>出てきたウインドウで<br>ユーザー環境変数→Path→編集<br>をポチポチ。<br>一覧の中に”C:\Program Files\nodejs&quot;(インストールした場所の絶対アドレス)が無ければ新規を押して追加。<br><br><br>以上の作業でNode.jsのコマンドをどこからでも使えるようになりました。プログラミングの環境を整えるときなど、よくやる作業なので慣れている方は機械的にできてしまうと思います。</p>
+<figure class="highlight plaintext"><figcaption><span>コマンドライン</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br></pre></td></tr></table></figure>
+<p>をコマンドラインで実行し、Node.jsのバージョンが表示されれば上手くいった証拠です。<br><br><br>続いては静的サイトジェネレータであるHexoをインストールします。下記のコマンドを実行するだけです。</p>
+<figure class="highlight plaintext"><figcaption><span>コマンドライン</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo</span><br></pre></td></tr></table></figure>
+<p>-g というオプションでグローバルにインストールします。<br><br></p>
+<h1><span id="hexodepuroziekutozuo-cheng">Hexoでプロジェクト作成</span><a href="#hexodepuroziekutozuo-cheng" class="header-anchor">#</a></h1><p>では、早速プロジェクトを作成してみましょう。任意のディレクトリで下記のコマンドを実行すると各種ファイルが用意されます。</p>
+<figure class="highlight plaintext"><figcaption><span>コマンドライン</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init プロジェクト名</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><figcaption><span>コマンドライン</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd プロジェクト名</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><figcaption><span>コマンドライン</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><figcaption><span>コマンドライン</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo server</span><br></pre></td></tr></table></figure>
+<br>
+
+<h1><span id="github-pagestonolian-xi-gong-kai">Github pagesとの連携・公開</span><a href="#github-pagestonolian-xi-gong-kai" class="header-anchor">#</a></h1><br>
+
+<h1><span id="ji-shi-nozuo-cheng">記事の作成</span><a href="#ji-shi-nozuo-cheng" class="header-anchor">#</a></h1>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://419kiddy.github.io/2021/06/28/make-hexo-page/" data-id="ckqgg5loq0000pwtah82mc37h" data-title="HexoとGithub Pagesで高速ホームページ作成" class="article-share-link">共有</a>
+      <a data-url="http://419kiddy.github.io/2021/06/28/make-hexo-page/" data-id="ckqgg5loq0000pwtah82mc37h" data-title="HexoとGithub Pagesで高速ウェブサイト作成" class="article-share-link">共有</a>
       
       
       
@@ -196,7 +230,7 @@
       <ul>
         
           <li>
-            <a href="/2021/06/28/make-hexo-page/">HexoとGithub Pagesで高速ホームページ作成</a>
+            <a href="/2021/06/28/make-hexo-page/">HexoとGithub Pagesで高速ウェブサイト作成</a>
           </li>
         
           <li>
