@@ -4,17 +4,31 @@
   <meta charset="utf-8">
   
   
-  <title>rp2 | kiddyのページ</title>
+  <title>RaspberryPi4 開封から起動まで | kiddyのページ</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="article">
-<meta property="og:title" content="rp2">
+  <meta name="description" content="こんにちは。先日購入したRaspberryPi4が無事届いたので、開封から初回起動までの流れをまとめておきたいと思います。   購入に利用させていただいたのは  秋月電子通商さん。公式代理店の在庫が無い時でも安定して在庫がありました。ラズパイ初心者なのでスターターセットを買ってみました。スペックはこんな感じ。  RaspberryPi4 model B RAM: 4GB ROM(SDカー">
+<meta property="og:type" content="article">
+<meta property="og:title" content="RaspberryPi4 開封から起動まで">
 <meta property="og:url" content="http://419kiddy.github.io/2021/06/30/rp2/index.html">
 <meta property="og:site_name" content="kiddyのページ">
+<meta property="og:description" content="こんにちは。先日購入したRaspberryPi4が無事届いたので、開封から初回起動までの流れをまとめておきたいと思います。   購入に利用させていただいたのは  秋月電子通商さん。公式代理店の在庫が無い時でも安定して在庫がありました。ラズパイ初心者なのでスターターセットを買ってみました。スペックはこんな感じ。  RaspberryPi4 model B RAM: 4GB ROM(SDカー">
 <meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="http://419kiddy.github.io/images/raspi2.jpg">
+<meta property="og:image" content="http://419kiddy.github.io/images/raspi3.jpg">
+<meta property="og:image" content="http://419kiddy.github.io/images/raspi1.PNG">
+<meta property="og:image" content="http://419kiddy.github.io/images/raspi4.jpg">
+<meta property="og:image" content="http://419kiddy.github.io/images/raspi5.jpg">
+<meta property="og:image" content="http://419kiddy.github.io/images/raspi6.jpg">
+<meta property="og:image" content="http://419kiddy.github.io/images/raspi7.jpg">
+<meta property="og:image" content="http://419kiddy.github.io/images/raspi8.jpg">
 <meta property="article:published_time" content="2021-06-30T05:34:04.000Z">
-<meta property="article:modified_time" content="2021-06-30T05:34:04.331Z">
+<meta property="article:modified_time" content="2021-07-02T07:35:22.172Z">
 <meta property="article:author" content="kiddy">
+<meta property="article:tag" content="技術">
+<meta property="article:tag" content="ラズパイ">
+<meta property="article:tag" content="Raspbian">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://419kiddy.github.io/images/raspi2.jpg">
   
     <link rel="alternate" href="/atom.xml" title="kiddyのページ" type="application/atom+xml">
   
@@ -89,7 +103,7 @@
         
   
     <h1 class="p-name article-title" itemprop="headline name">
-      rp2
+      RaspberryPi4 開封から起動まで
     </h1>
   
 
@@ -97,14 +111,45 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        
+        <br>
+<br>
+<br>
+<br>
+<br>
+こんにちは。先日購入したRaspberryPi4が無事届いたので、開封から初回起動までの流れをまとめておきたいと思います。
+<br>
+<br>
+購入に利用させていただいたのは
+
+<p><a target="_blank" rel="noopener" href="https://akizukidenshi.com/catalog/g/gK-15038/">秋月電子通商</a>さん。公式代理店の在庫が無い時でも安定して在庫がありました。ラズパイ初心者なのでスターターセットを買ってみました。<br>スペックはこんな感じ。</p>
+<ul>
+<li>RaspberryPi4 model B</li>
+<li>RAM: 4GB</li>
+<li>ROM(SDカード): 32GB</li>
+</ul>
+<img src="/images/raspi2.jpg" width="70%">
+ケース（左上）、本体（中央上）、miniHDMIケーブル（右）、Type-C電源ケーブル（左下）
+<br><br>
+<span id="more"></span>
+<img src="/images/raspi3.jpg" width="70%">
+一枚目に写し忘れたSDカードと本体の箱の中身。
+基盤を見るとゾクゾクします。
+<br><br>
+<img src="/images/raspi1.PNG" width="70%">
+秋月電子通商さんのスターターセットでは同梱のSDカードにあらかじめOSであるRaspbianが書き込まれているためSDカードをそのまま差せば起動してくれます。<br>
+ですが、OSの書き込み作業も体験してみたかったので同梱のSDカードを一度空にして、自分の手で書き込み作業をやってみることにしました。<br>
+
+<p><a target="_blank" rel="noopener" href="https://www.raspberrypi.org/software/">ラズパイの公式ホームページ</a>のDownload欄からRaspberryPi Imagerというソフトウェアをダウンロード&amp;インストール。<br><br>起動すると上記のような画面が表示されるので、Oparating Systemの欄で「Raspberry Pi OS (32-bit)」を選択、Storageの欄ではPCに差込んだSDカードを選択します。そしたら右のWRITEボタンをクリックしてしばらく待ちましょう。<br>書き込みが完了したらOSの準備は完了です。<br><br><br><br><img src="/images/raspi4.jpg" width="70%"><br>SDカードを入れる場所で一瞬迷いましたが、背面に差込口がありました。<br><br><br><br><img src="/images/raspi5.jpg" width="70%"><br>ケースは三層構造。➀土台に基盤を乗せ➁側面カバーを被せ➂蓋をする。という感じに組み立てられます。<br><br><br><br><img src="/images/raspi6.jpg" width="70%"><br>HDMIケーブルをモニタに、それから電源をコンセントに繋げれば勝手に起動します。<br><br><br><br><img src="/images/raspi7.jpg" width="70%"><br>（ドキドキ・・・）<br><br><br><br><img src="/images/raspi8.jpg" width="70%"><br>うまく起動できたようです。純粋なLinuxマシンは初めましてです…<br><br>コマンド使いこなしてつよつよエンジニアになりたいですね。<br><br>この子をどう使っていくかはまだ決まっていませんが、いじっていく様子は今後も記事にして行くつもりです。今回はこの辺で。</p>
+
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://419kiddy.github.io/2021/06/30/rp2/" data-id="ckqj2nmoi0000wktabes7ez8b" data-title="rp2" class="article-share-link">共有</a>
+      <a data-url="http://419kiddy.github.io/2021/06/30/rp2/" data-id="ckqj2nmoi0000wktabes7ez8b" data-title="RaspberryPi4 開封から起動まで" class="article-share-link">共有</a>
       
       
       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Raspbian/" rel="tag">Raspbian</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E3%83%A9%E3%82%BA%E3%83%91%E3%82%A4/" rel="tag">ラズパイ</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%8A%80%E8%A1%93/" rel="tag">技術</a></li></ul>
+
     </footer>
   </div>
   
@@ -134,7 +179,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">タグ</h3>
     <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/" rel="tag">Hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/WEB/" rel="tag">WEB</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/info/" rel="tag">info</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/introduction/" rel="tag">introduction</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E3%83%A9%E3%82%BA%E3%83%91%E3%82%A4/" rel="tag">ラズパイ</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%8A%80%E8%A1%93/" rel="tag">技術</a></li></ul>
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/" rel="tag">Hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Raspbian/" rel="tag">Raspbian</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/WEB/" rel="tag">WEB</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/info/" rel="tag">info</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/introduction/" rel="tag">introduction</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E3%83%A9%E3%82%BA%E3%83%91%E3%82%A4/" rel="tag">ラズパイ</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%8A%80%E8%A1%93/" rel="tag">技術</a></li></ul>
     </div>
   </div>
 
@@ -144,7 +189,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">タグクラウド</h3>
     <div class="widget tagcloud">
-      <a href="/tags/Hexo/" style="font-size: 10px;">Hexo</a> <a href="/tags/WEB/" style="font-size: 10px;">WEB</a> <a href="/tags/info/" style="font-size: 10px;">info</a> <a href="/tags/introduction/" style="font-size: 10px;">introduction</a> <a href="/tags/%E3%83%A9%E3%82%BA%E3%83%91%E3%82%A4/" style="font-size: 10px;">ラズパイ</a> <a href="/tags/%E6%8A%80%E8%A1%93/" style="font-size: 20px;">技術</a>
+      <a href="/tags/Hexo/" style="font-size: 10px;">Hexo</a> <a href="/tags/Raspbian/" style="font-size: 10px;">Raspbian</a> <a href="/tags/WEB/" style="font-size: 10px;">WEB</a> <a href="/tags/info/" style="font-size: 10px;">info</a> <a href="/tags/introduction/" style="font-size: 10px;">introduction</a> <a href="/tags/%E3%83%A9%E3%82%BA%E3%83%91%E3%82%A4/" style="font-size: 15px;">ラズパイ</a> <a href="/tags/%E6%8A%80%E8%A1%93/" style="font-size: 20px;">技術</a>
     </div>
   </div>
 
@@ -166,7 +211,7 @@
       <ul>
         
           <li>
-            <a href="/2021/06/30/rp2/">rp2</a>
+            <a href="/2021/06/30/rp2/">RaspberryPi4 開封から起動まで</a>
           </li>
         
           <li>
